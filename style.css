@@ -1,0 +1,159 @@
+body {
+	margin-left: 2em;
+	margin-right: 4em;
+}
+
+.custom-home { 
+/* 50% makes the section centered, "fixed" makes it not scrollable */
+	/*background: url(picture.jpg) 50% 0 repeat fixed;*/ 
+
+	/*background: url(static/butterfly.jpeg) 50% 0 no-repeat fixed; */
+	background: 50% 0 no-repeat fixed; 
+	background-color: #404040;  	
+	/*height: 20em;*/ 
+	height: 25em; 
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative;
+}
+
+.custom-navigation-container {
+	border-style: solid;
+	border-bottom-color: #EA46A1;
+}
+
+.custom-home .custom-header { 
+	height: 20em; 
+	position: fixed;
+	text-align: left;
+	top: 6em; 
+	width: 100%; 
+	color: white;
+}
+
+.custom-name-container {
+	font-weight: bold;
+	font-size: 120%;
+	font-family: helvetica, sans-serif;
+	margin-left: 2em;
+	width: 20em;
+	text-align: left;
+	float: left;
+}
+
+.title {
+	font-style: italic;
+}
+
+.custom-content { 
+	/* background: url(static/photo_apple.jpg) 50% 0 no-repeat; */
+	background: 50% 0 no-repeat;	 
+	height: auto; 
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	/*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8); */
+}
+
+.custom-about-me-top {
+	display: inline-block;
+	margin-right: 4em;	
+}
+.custom-img-container {
+	float: left;
+	padding: 1em;
+	width:40%;
+}
+.custom-about-me-text-container {
+	float:right;
+	padding: 1em;
+	width:60%;
+	text-align: justify;
+}
+
+.custom-section {
+	padding: 2em;
+}
+.custom-odd-section {
+	background-color: white;
+}
+
+.custom-even-section {
+	background-color: #E6E6E6; /* light gray*/
+	/*font-weight: bold;*/
+}
+
+.custom-section-title {
+	font-style: italic;
+	font-family: arial;
+	color: #CC9AA2;  /* pink */
+	font-weight: bold;
+	text-align: left;
+	font-size: 160%;
+	padding-bottom: 1em;
+}
+
+.custom-section-title-desc {
+	padding-bottom: 2em;
+	font-style: italic;
+}
+
+/* ------ Work section styling -----------*/
+
+.custom-genee-img {
+	border: solid;
+	height: 25em;
+	width: 30em;
+	margin-right: 6em;	
+}
+.custom-reserv-img {
+	border: solid;
+	height: 25em;
+	width: 22em;
+	margin-right: 6em;	
+}
+.custom-ins-selec-img {
+	border: solid;
+	height: 30em;
+	width: 25em;
+	margin-right: 2em;	
+	margin-top: 3em;
+}
+
+
+.custom-description {
+	padding-right: 4em;
+	text-align: justify;
+}
+
+/* ------ Work Experience Styling ------- */
+
+.jobHeader {
+	color: black;
+	padding-top: 1.5em;
+	padding-bottom: 2em:;
+	font-weight: bold;
+}
+.jobRole {
+	font-weight: bold;
+	font-style: italic;
+}
+.jobRole2 {
+	padding-top: 0em;
+	padding-bottom: 0.9em;
+}
+
+
+/* ------  Footer ---------*/
+.custom-footer {
+	background-color: black;
+	border-style: solid;
+	border-top-color: #EA46A1;
+	/* opacity: 0.9; */
+	height: 5em;
+}
+
+
+
