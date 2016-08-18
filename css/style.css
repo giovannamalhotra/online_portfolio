@@ -1,0 +1,238 @@
+body {
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.custom-navigation-container {
+	border-style: solid;
+	padding-left: 5rem;
+    padding-right: 5rem;
+    opacity: 0.7;
+    background-color: #000000;
+}
+
+.nav a {
+	color: white !important;	
+}
+.nav a:hover {
+	color: #CC9AA2 !important;
+	border-radius: 4px;
+}
+
+.custom-header { 
+	height: 60rem; 
+/*	position: fixed; */
+	text-align: left;
+	width: 100%; 
+	color: white;
+
+	background: url(img/Profile1.png) 50% 50% no-repeat fixed;
+	background: url(img/Profile1.png) no-repeat fixed;
+	background-size: cover; /* Make picture expand to cover entire section */
+	background-color: #404040;  	
+}
+
+.custom-name-container {
+	font-weight: bold;
+	font-size: 120%;
+	font-family: helvetica, sans-serif;
+	margin-top: 3rem;
+}
+
+.custom-title {
+	font-style: italic;
+}
+
+.custom-content { 
+	/* background: url(static/photo_apple.jpg) 50% 0 no-repeat; */
+	background: 50% 0 no-repeat;	 
+	height: auto; 
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	/*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8); */
+}
+
+.custom-about-me-top {
+	display: inline-block;
+	margin-right: 4rem;
+	margin-top: 2rem;	
+}
+.custom-img-container {
+	padding: 1rem;
+/*	max-width:50rem; */
+	text-align: center;  
+}
+.custom-img-container img { margin-top: 0.5rem;}
+
+.custom-about-me-top img { max-width: 300px;}
+
+.custom-about-me-text-container {
+	padding: 1rem;
+/*	width:60%; */
+	text-align: justify;
+}
+
+.custom-paragraph {
+	padding-bottom: 2rem;
+	font-size: 17px;
+	line-height: 1.5;
+	text-align: justify;
+}
+ul li { font-size: 15px; line-height: 1.5;}
+
+.custom-section {
+	padding: 7rem;
+	min-height: 100vh;
+}
+#skills.custom-section {
+	min-height: auto;	
+}
+
+.custom-odd-section {
+	background-color: white;
+}
+
+.custom-even-section {
+	background-color: #E6E6E6; /* light gray*/
+}
+
+.custom-section-title {
+	font-style: italic;
+	font-family: arial;
+	font-weight: bold;
+	text-align: left;
+	font-size: 3rem;
+	padding-bottom: 2.5rem;
+
+	color: #CC9AA2;  /* pink */
+	color: #984d59;
+    opacity: 0.7;
+}
+
+.custom-section-title-desc {
+	padding-bottom: 2rem;
+	font-style: italic;
+}
+
+.functionalSkills { margin-top: 3rem;}
+
+.highlighted {
+	font-weight: bold;
+	color: #984d59;
+    opacity: 0.7;
+}
+
+.tehnicalSkills ul li { margin-bottom: 0.5rem;}
+
+
+
+/* ------ Work section styling -----------*/
+
+#work .row, #experience .job.row, .technicalSkills, .functionalSkills { 
+	margin-left: 5rem; margin-right: 4rem;
+}
+
+.custom-genee-img {
+	border: solid;
+	height: 40rem;
+	width: 30rem;
+	margin-left: 3rem;
+	margin-top: 1rem;	
+}
+.custom-reserv-img {
+	border: solid;
+	height: 30rem;
+	width: 35rem;
+	margin-top: 1rem;	
+}
+.custom-ins-selec-img {
+	border: solid;
+	height: 35rem;
+	width: 35rem;
+	margin-right: 2rem;	
+	margin-top: 1.5rem;
+}
+
+
+.custom-description {
+	padding-right: 4rem;
+	text-align: justify;
+}
+
+.custom-descr-right { padding-left: 6rem;}
+
+
+/* ------ Work Experience Styling ------- */
+
+.jobHeader {
+	color: black;
+	padding-top: 1.5rem;
+	padding-bottom: 2rem:;
+	font-weight: bold;
+}
+.jobRole {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #984d59;
+    opacity: 0.7;
+}
+.jobRole2 {
+	padding-top: 0rem;
+	padding-bottom: 0.9rem;
+}
+.job {
+	margin: 3rem 0 4rem 0;
+}
+.jobResponsibilities {margin-bottom: 0;}
+
+.job .jobColumn1 { padding-left: 0; text-align: center;}
+.job .jobColumn2 { text-align: justify; padding-left:1.5rem;}
+
+.company { font-weight: bold;}
+.companyLocation, .timeInJob { font-style: italic;}
+
+
+/* ------  Footer ---------*/
+.custom-footer {
+	background-color: #000000;
+	border-style: solid;
+	opacity: 0.8;
+    height: auto;
+    text-align: right;
+    padding: 1rem 3rem;
+    font-size: 30px;
+}
+
+.custom-footer a, .custom-footer a:visited, .custom-footer a:active {
+    color: #b3b3b3;
+}
+.custom-footer a:hover, .custom-footer a:focus {
+	color: #CC9AA2;
+}
+
+/* --- Overwrite Bootstrap CSS --- */
+@media (min-width: 768px) {
+	.navbar-nav>li>a {
+	    padding-top: 8px;
+	    padding-bottom: 8px;
+	}
+}
+
+/* Small screen size up to 768px */
+/* @media (max-width: 768px) {  */
+@media (max-width: 992px) {
+	.custom-about-me-top { margin-right:0;}
+	.custom-about-me-text-container { padding: 0;}
+	#work .custom-description { padding-left:0; padding-right:0;}
+	#work .custom-image img { margin-left: auto; margin-right: auto;}
+	#work .row, #experience .job.row, .technicalSkills, .functionalSkills { margin-left:0; margin-right:0;}
+
+}
+

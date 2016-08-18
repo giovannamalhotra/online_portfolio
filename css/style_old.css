@@ -1,47 +1,45 @@
 body {
-	margin-left: 2em;
-	margin-right: 4em;
 }
 
-.custom-home { 
-/* 50% makes the section centered, "fixed" makes it not scrollable */
-	/*background: url(picture.jpg) 50% 0 repeat fixed;*/ 
-
-	/*background: url(static/butterfly.jpeg) 50% 0 no-repeat fixed; */
-	background: 50% 0 no-repeat fixed; 
-	background-color: #404040;  	
-	/*height: 20em;*/ 
-	height: 25em; 
-	margin: 0 auto; 
-	width: 100%; 
-	position: relative;
+.row {
+	margin-left: 0;
+	margin-right: 0;
 }
+
 
 .custom-navigation-container {
 	border-style: solid;
-	border-bottom-color: #EA46A1;
 }
 
-.custom-home .custom-header { 
-	height: 20em; 
-	position: fixed;
+.nav a {
+	color: white !important;	
+}
+.nav a:hover {
+	color: #CC9AA2 !important;
+	border-radius: 4px;
+}
+
+.custom-header { 
+	height: 60em; 
+/*	position: fixed; */
 	text-align: left;
-	top: 6em; 
 	width: 100%; 
 	color: white;
+
+	background: url(img/Profile1.png) 50% 50% no-repeat fixed;
+	background: url(img/Profile1.png) no-repeat fixed;
+	background-size: cover; /* Make picture expand to cover entire section */
+	background-color: #404040;  	
 }
 
 .custom-name-container {
 	font-weight: bold;
 	font-size: 120%;
 	font-family: helvetica, sans-serif;
-	margin-left: 2em;
-	width: 20em;
-	text-align: left;
-	float: left;
+	margin-top: 3rem;
 }
 
-.title {
+.custom-title {
 	font-style: italic;
 }
 
@@ -59,7 +57,8 @@ body {
 
 .custom-about-me-top {
 	display: inline-block;
-	margin-right: 4em;	
+	margin-right: 4em;
+	margin-top: 3em;	
 }
 .custom-img-container {
 	float: left;
@@ -73,8 +72,14 @@ body {
 	text-align: justify;
 }
 
+.custom-paragraph {
+	padding-bottom: 2rem;
+	font-size: 16px;
+}
+ul li { font-size: 14px;}
+
 .custom-section {
-	padding: 2em;
+	padding: 5em;
 }
 .custom-odd-section {
 	background-color: white;
@@ -82,7 +87,6 @@ body {
 
 .custom-even-section {
 	background-color: #E6E6E6; /* light gray*/
-	/*font-weight: bold;*/
 }
 
 .custom-section-title {
@@ -91,8 +95,8 @@ body {
 	color: #CC9AA2;  /* pink */
 	font-weight: bold;
 	text-align: left;
-	font-size: 160%;
-	padding-bottom: 1em;
+	font-size: 3rem;
+	padding-bottom: 0.5em;
 }
 
 .custom-section-title-desc {
@@ -150,7 +154,7 @@ body {
 .custom-footer {
 	background-color: black;
 	border-style: solid;
-	border-top-color: #EA46A1;
+/*	border-top-color: #EA46A1; */
 	/* opacity: 0.9; */
 	height: 5em;
 }
