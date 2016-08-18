@@ -146,6 +146,14 @@ ul li { font-size: 15px; line-height: 1.5;}
 	margin-left: 3rem;
 	margin-top: 1rem;	
 }
+.custom-dashup-img {
+	border: solid;
+	height: 35rem;
+	width: 35rem;
+	margin-left: 3rem;
+	margin-top: 1rem;		
+}
+
 .custom-reserv-img {
 	border: solid;
 	height: 30rem;

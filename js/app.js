@@ -22,18 +22,22 @@
 	// Daily and weekly calendar images under "web development work"
 	var images1 = new Array ('img/genee_homepage.jpg', 'img/genee_signup.jpg', 'img/genee_edit_1.png', 'img/genee_edit_2.png', 'img/genee_edit_3.png', 'img/genee_meeting_status.png', 'img/genee_meeting_status_2.png', 'img/genee_schedule_calendar.png', 'img/genee_confirm_time.jpg', 'img/genee_userDashboard.png');
 
-	// Daily and weekly calendar images under "web development work"
-	var images2 = new Array ('img/genee_weekly_calendar.jpg', 'img/genee_daily_calendar.jpg');
+	// DashUp app images under "web development work"
+	var images2 = new Array ('img/dashrecruit.png', 'img/dashrecruit_2cols.png', 'img/dashrecruit_landing.png');
 
-	// Insurance Selector tool images
-	var images3 = new Array ('img/ins_selector_1.jpg', 'img/ins_selector_2.jpg', 'img/ins_selector_3.jpg', 'img/ins_selector_3b.jpg', 'img/ins_selector_4.jpg');
+	// HackerDojo reservation app images under "web development work"
+	var images3 = new Array ('img/genee_weekly_calendar.jpg', 'img/genee_daily_calendar.jpg');
 
-	// Carousel images
-	var images4 = new Array ('img/carousel_1.jpg', 'img/carousel_2.jpg', 'img/carousel_3.jpg', 'img/carousel_4.jpg');
+	// Insurance Selector tool images  under "web development work"
+	var images4 = new Array ('img/ins_selector_1.jpg', 'img/ins_selector_2.jpg', 'img/ins_selector_3.jpg', 'img/ins_selector_3b.jpg', 'img/ins_selector_4.jpg');
+
+	// Carousel images  under "web development work"
+	var images5 = new Array ('img/carousel_1.jpg', 'img/carousel_2.jpg', 'img/carousel_3.jpg', 'img/carousel_4.jpg');
 	
 	var index1 = 1;
 	var index2 = 1;
 	var index3 = 1;
+	var index4 = 1;
 
 
 	function rotateImage1($elem, image_array)
@@ -85,19 +89,42 @@
 	  });
 	}
 
+	function rotateImage4($elem, image_array)
+	{
+	  $elem.fadeOut('fast', function()
+	  {
+	    $(this).attr('src', image_array[index4]);
+	    $(this).fadeIn('fast', function()
+	    {
+	      if (index4 == image_array.length-1) {
+	        index4 = 0;
+	      } else {
+	        index4++;
+	      }
+	    });
+	  });
+	}
+
+
+
 	var jqueryObj1 = $('.custom-genee-img');	
 	setInterval (function() { 
 		rotateImage1(jqueryObj1, images1); 
 	}, 2500);
-	
-	var jqueryObj2 = $('.custom-reserv-img');	
+
+	var jqueryObj2 = $('.custom-dashup-img');	
 	setInterval (function() { 
 		rotateImage2(jqueryObj2, images2); 
 	}, 2500);
-
-	var jqueryObj3 = $('.custom-ins-selec-img');	
+	
+	var jqueryObj3 = $('.custom-reserv-img');	
 	setInterval (function() { 
 		rotateImage3(jqueryObj3, images3); 
+	}, 2500);
+
+	var jqueryObj4 = $('.custom-ins-selec-img');	
+	setInterval (function() { 
+		rotateImage4(jqueryObj4, images4); 
 	}, 2500);
 
 /*
